@@ -1,0 +1,107 @@
+(a)
+
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': nicolemgarcia
+Password for 'https://nicolemgarcia@github.com': 
+Counting objects: 5, done.
+Delta compression using up to 56 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 394 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/nicolemgarcia/assignment2
+   a701e43..2b3e555  master -> master
+
+
+(b)
+
+git shortlog -s -n
+
+I used the above command which resulted in a list of user names with
+the number of commits done. Thus far there have been 10 commits done,
+6 were done by Esteban and 4 by me. 
+
+
+(c)
+
+git log -1 --pretty="format:%ci" .gitignore
+
+I used the above command which said the last time the .gitignore was 
+modified was 2019-09-25 18:13:30.
+
+
+(d)
+
+1- Branches seperate your curreny work from the originial and prevent 
+you from messing up the original in the case that something happens.
+
+2-Allows for multiple people to work on the same project fixing different
+features in parallel.
+
+
+(e)
+
+git status shows modified files in working directory staged for the next commit
+git log shows all commits in the current branch's history
+
+
+(f)
+
+git log --follow -- Vehicle.h
+
+
+
+(g)
+
+git log --all --grep='file'
+
+
+(h)
+
+(I) What is inheritance? 
+
+	The capability of a class to derive properties and charcteristics 
+	from another class. 
+
+(II) What is polymorphism? 
+	
+	Having many forms. In coding terms it usually deasl with inheretence 
+	and calling on function calls executed at different levels. This also 
+	includes virtual classes and functions.
+	
+(III) What is encapsulation?
+	
+	The process of combining data members and fucntions in a single unit
+	called class. Wrapping everything into a class.
+
+(i)
+
+
+In the integration manager workflow each developer pushes to their own repository
+and conflicts are resolved by the integration managers. Meanwhile in the Dictator
+and Lieutenants workflow, the lieutenant merges changes from the developers' 
+repositories and then the dictator merges the lieutenant repositories and solves 
+any conflicts; basically, an extra checking step is involved.
+
+(j)
+
+The Centralized workflow could cause a lot of merging conflicts with each developer 
+pulling and pushing into the same repository. With the Dictator and Lieutenants
+workflow, the developers' work would be pulled by the lieutenant small groups at a 
+time merging and correcting any conflict and then the push would be done only by 
+one person, the dictator.
+
+
