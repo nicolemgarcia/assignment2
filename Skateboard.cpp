@@ -19,7 +19,9 @@ virtual double Skateboard::mileageEstimate(double time)
 	
         if(time > 25 && time < 250)
         {
-                mileage += mileage //wtf
+		timeCalc = time/3;
+		timeCalc = rand() % timeCalc + 1;
+                mileage += mileage + timeCalc;
         }
         return mileage;	
 }
