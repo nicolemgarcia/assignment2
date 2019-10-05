@@ -105,3 +105,8 @@ time merging and correcting any conflict and then the push would be done only by
 one person, the dictator.
 
 
+5. 
+
+Yes it uses both. It uses polymorphism when it uses the virtual classes and
+encapsulation by using private function which hides information.
+
