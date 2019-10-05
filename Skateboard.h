@@ -10,10 +10,9 @@ class Skateboard : public Vehichle {
 
 
 public:
-        explicit Skateboard(string brand, string model, string fuelType, int numberOfEngines);
+        explicit Skateboard(string brand, string model);
         virtual ~Skateboard();
-        int getNumOfEngines();
-        void setNumberOfEngines(int numberOfEngines);
+
         virtual double mileageEstimate(double time);
 
 };
